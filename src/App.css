@@ -1,0 +1,32 @@
+.App{
+  text-align: center;
+}
+.container{
+  display: flex;
+}
+.item{
+  flex: 1;
+  padding: 30px;
+  border: 1px solid blue;
+  position: relative;
+  overflow: hidden;
+}
+.overlay{
+  transition:bottom ease 1s;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background-color: purple;
+  opacity: 0.6;
+}
+.item:hover .overlay{
+  opacity: .6;
+  bottom: 0;
+
+}
+@media only screen and (max-width:  600px){
+.container{
+  flex-direction: column;
+}
+}
