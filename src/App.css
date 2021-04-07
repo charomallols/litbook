@@ -2,31 +2,29 @@
   text-align: center;
 }
 .container{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
+
 .item{
-  flex: 1;
   padding: 30px;
-  border: 1px solid blue;
   position: relative;
+  border: 1px solid blue;
   overflow: hidden;
 }
+
 .overlay{
-  transition:bottom ease 1s;
+  transition: bottom ease 1s;
   position: absolute;
-  bottom: -100%;
+  bottom: -100px;
   left: 0;
   width: 100%;
-  background-color: purple;
   opacity: 0.6;
+  background-color: purple;
+
 }
 .item:hover .overlay{
   opacity: .6;
   bottom: 0;
+}
 
-}
-@media only screen and (max-width:  600px){
-.container{
-  flex-direction: column;
-}
-}
