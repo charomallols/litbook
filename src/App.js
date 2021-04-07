@@ -8,32 +8,7 @@ import Aquitania from './images/Aquitania.jpg';
 
 import './App.css';
 
-function doStuff1(list, target) {
-  return list.filter(item => {
-      return item === target;
-  });
-}
 
-function doStuff2(list, target) {
-  return list.find(item => {
-      return item === target;
-  });
-}
-
-function doStuff3(list) {
-  return list.map(item => {
-      return item.toLowerCase();
-  });
-}
-
-const list = ['Patatas', 'Manzanas', 'Peras'];
-console.log(doStuff1(list, 'Manzanas'));
-console.log(doStuff2(list, 'Manzanas'));
-console.log(doStuff3(list));
-
-//Question 1: What's the breakpoint execution order?
-//Question 2: What happens if you call: console.log(doStuff1(list, 'manzanas'));?
-//Question 3: How would you improve your doStuff1 by ignoring casing? e.g. to find 'MANZANAS'
 
 class App extends Component {
   render() {
